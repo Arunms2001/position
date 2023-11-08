@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .img1{
+            width: 400px;
+            height: 300px;
+            z-index: 1;
+        }
+        .img2{
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            margin-left: -293px;
+            z-index: 2;
+            margin-top: 100px;
+        }
+        .container{
+            display: flex;
+            
+        }
+        .img3{
+            width: 400px;
+            height: 300px;
+            z-index: 1;
+            
+        }
+        .img4{
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            margin-left: -293px;
+            z-index: 2;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+<div style="width: 50%; height: 100%;">
+    <img src="img2.jpg" class="img1">
+    <img src="img1.jpg" class="img2">
+</div>
+<div style="width: 50%; height: 100%; ">
+    <img src="img3.jpeg" class="img3">
+    <img src="img4.jpeg" class="img4">
+</div>
+    </div>
+</body>
+</html>
